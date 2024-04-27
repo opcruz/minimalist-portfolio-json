@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && npm run copy-robots",
-    "copy-robots": "cp robots.txt dist/robots.txt",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
