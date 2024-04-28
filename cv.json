@@ -26,9 +26,44 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "DATYS (Development of Applications, Technologies and Systems)",
+      "position": "Semi Senior Backend Developer",
+      "url": "https://www.linkedin.com/company/datyscuba/",
+      "startDate": "2019-09-01",
+      "endDate": "2022-10-01",
+      "summary": "During my three years at this software company, I worked as a backend developer.\nMy role was primarily focused on developing microservices using Scala and Java.\nIn 2020, I received the recognition of Rookie of the Year.",
+      "highlights": [
+        "Rookie of the Year"
+      ]
+    }
+  ],
   "volunteer": [],
-  "education": [],
+  "education": [
+    {
+      "institution": "National Technological Institute of Mexico (TecNM), campus Ciudad Guzmán",
+      "url": "https://www.cdguzman.tecnm.mx/",
+      "area": "Master's Degree in Computer Science",
+      "studyType": "Master",
+      "startDate": "2022-09-01",
+      "endDate": "2024-08-01",
+      "score": "5.0",
+      "courses": []
+    },
+    {
+      "institution": "University \"Marta Abreu\" of Las Villas",
+      "url": "https://www.uclv.edu.cu/",
+      "area": "Bachelor's Degree in Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2014-09-01",
+      "endDate": "2019-07-01",
+      "score": "4.0",
+      "courses": [
+        "Introduction to Big Data and Distributed Processing Course."
+      ]
+    }
+  ],
   "awards": [],
   "certificates": [],
   "publications": [],
@@ -37,28 +72,39 @@
       "name": "Node",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
       ]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
       "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
       ]
     },
     {
       "name": "Git",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
       ]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
       ]
     }
   ],
@@ -72,28 +118,46 @@
       "fluency": "Intermediate"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
   "projects": [
     {
-    "name": "springboot-sqlite",
-    "isActive": true,
-    "description": "Demo of a simple ecommerce app built with Spring Boot and SQLite, featuring RESTful API endpoints for managing products, customers, and orders.",
-    "highlights": [
-      "Spring Boot and SQLite",
-      "RESTful API"
-    ],
-    "url": "https://github.com/opcruz/springboot-sqlite",
-    "github": "https://github.com/opcruz/springboot-sqlite"
-  }
-]
+      "name": "springboot-sqlite",
+      "isActive": true,
+      "description": "Demo of a simple ecommerce app built with Spring Boot and SQLite, featuring RESTful API endpoints for managing products, customers, and orders.",
+      "highlights": [
+        "Spring Boot and SQLite",
+        "RESTful API",
+        "Java",
+        "Spring Boot"
+      ],
+      "url": "https://github.com/opcruz/springboot-sqlite",
+      "github": "https://github.com/opcruz/springboot-sqlite"
+    },
+    {
+      "name": "CDITools",
+      "isActive": true,
+      "description": "CDITools is a tool that allows to go through the main stages of complex network processing: analysis, detection, visualization and evaluation of communities, regardless of the topology.",
+      "highlights": [
+        "Complex networks",
+        "Community Detection",
+        "R"
+      ],
+      "url": "https://github.com/opcruz/CDITools",
+      "github": "https://github.com/opcruz/CDITools"
+    }
+  ]
 }
