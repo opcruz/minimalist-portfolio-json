@@ -34,9 +34,7 @@
       "startDate": "2019-09-01",
       "endDate": "2022-10-01",
       "summary": "During my three years at this software company, I worked as a backend developer.\nMy role was primarily focused on developing microservices using Scala and Java.\nIn 2020, I received the recognition of Rookie of the Year.",
-      "highlights": [
-        "Rookie of the Year"
-      ]
+      "highlights": ["Rookie of the Year"]
     },
     {
       "name": "COCITODO",
@@ -44,9 +42,7 @@
       "url": "https://cocitodo.com.mx/",
       "startDate": "2022-12-10",
       "summary": "As the Lead Software Engineer at Cocitodo, I design and maintain a custom Business Management Software that handles inventory, sales, and operational processes. The system functions as a lightweight ERP tailored to the company's needs, integrating features such as inventory control, sales tracking, customer management, and reporting.",
-      "highlights": [
-        "Lead Software Engineer"
-      ]
+      "highlights": ["Lead Software Engineer"]
     }
   ],
   "volunteer": [],
@@ -69,9 +65,7 @@
       "startDate": "2014-09-01",
       "endDate": "2019-07-01",
       "score": "4.0",
-      "courses": [
-        "Introduction to Big Data and Distributed Processing Course."
-      ]
+      "courses": ["Introduction to Big Data and Distributed Processing Course."]
     }
   ],
   "awards": [],
@@ -79,43 +73,54 @@
   "publications": [],
   "skills": [
     {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Backend",
-        "JavaScript",
-        "Servidor"
-      ]
+      "name": "Spring",
+      "level": "Advanced",
+      "keywords": []
     },
     {
       "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos",
-        "SQL",
-        "Almacenamiento de Datos",
-        "Backend"
-      ]
+      "level": "Advanced",
+      "keywords": ["Database", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente"
-      ]
+      "level": "Advanced",
+      "keywords": []
     },
     {
       "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
-      ]
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Cloudflare",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Kafka",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Scala",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": []
     }
   ],
   "languages": [
@@ -131,10 +136,7 @@
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "keywords": ["Ferrets", "Unicorns"]
     }
   ],
   "references": [
@@ -161,11 +163,7 @@
       "name": "CDITools",
       "isActive": true,
       "description": "CDITools is a tool that allows to go through the main stages of complex network processing: analysis, detection, visualization and evaluation of communities, regardless of the topology.",
-      "highlights": [
-        "Complex networks",
-        "Community Detection",
-        "R"
-      ],
+      "highlights": ["Complex networks", "Community Detection", "R"],
       "url": "https://github.com/opcruz/CDITools",
       "github": "https://github.com/opcruz/CDITools"
     }
