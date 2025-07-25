@@ -37,6 +37,16 @@
       "highlights": [
         "Rookie of the Year"
       ]
+    },
+    {
+      "name": "COCITODO",
+      "position": "Lead Software Engineer",
+      "url": "https://cocitodo.com.mx/",
+      "startDate": "2022-12-10",
+      "summary": "As the Lead Software Engineer at Cocitodo, I design and maintain a custom Business Management Software that handles inventory, sales, and operational processes. The system functions as a lightweight ERP tailored to the company's needs, integrating features such as inventory control, sales tracking, customer management, and reporting.",
+      "highlights": [
+        "Lead Software Engineer"
+      ]
     }
   ],
   "volunteer": [],
