@@ -68,9 +68,54 @@
       "courses": ["Introduction to Big Data and Distributed Processing Course."]
     }
   ],
-  "awards": [],
-  "certificates": [],
-  "publications": [],
+  "projects": [
+    {
+      "name": "CocitodoFX",
+      "isActive": true,
+      "description": "CocitodoFx is a complete, custom-built ERP application developed for the company Cocitodo. It is designed to streamline business operations such as inventory management, sales tracking, customer management, and reporting.",
+      "highlights": [
+        "Java",
+        "JavaFX",
+        "MySQL",
+        "ERP system"
+      ],
+      "url": "https://www.cocitodo.com.mx/"
+    },
+    {
+      "name": "gaiaDR3ML",
+      "isActive": false,
+      "description": "Applied machine learning models to classify low-resolution spectra from the Gaia DR3 catalog, enabling more accurate and automated identification of astronomical objects.",
+      "highlights": [
+        "Python",
+        "Astronomy",
+        "Machine Learning",
+        "Gaia DR3"
+      ],
+      "url": "https://github.com/opcruz/gaiaDR3ML",
+      "github": "https://github.com/opcruz/gaiaDR3ML"
+    },
+    {
+      "name": "springboot-sqlite",
+      "isActive": true,
+      "description": "Demo of a simple ecommerce app built with Spring Boot and SQLite, featuring RESTful API endpoints for managing products, customers, and orders.",
+      "highlights": [
+        "Spring Boot and SQLite",
+        "RESTful API",
+        "Java",
+        "Spring Boot"
+      ],
+      "url": "https://github.com/opcruz/springboot-sqlite",
+      "github": "https://github.com/opcruz/springboot-sqlite"
+    },
+    {
+      "name": "CDITools",
+      "isActive": false,
+      "description": "CDITools is a tool that allows to go through the main stages of complex network processing: analysis, detection, visualization and evaluation of communities, regardless of the topology.",
+      "highlights": ["Complex networks", "Community Detection", "R"],
+      "url": "https://github.com/opcruz/CDITools",
+      "github": "https://github.com/opcruz/CDITools"
+    }
+  ],
   "skills": [
     {
       "name": "Spring",
@@ -123,6 +168,9 @@
       "keywords": []
     }
   ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
   "languages": [
     {
       "language": "Spanish",
@@ -143,29 +191,6 @@
     {
       "name": "Jane Doe",
       "reference": "Reference…"
-    }
-  ],
-  "projects": [
-    {
-      "name": "springboot-sqlite",
-      "isActive": true,
-      "description": "Demo of a simple ecommerce app built with Spring Boot and SQLite, featuring RESTful API endpoints for managing products, customers, and orders.",
-      "highlights": [
-        "Spring Boot and SQLite",
-        "RESTful API",
-        "Java",
-        "Spring Boot"
-      ],
-      "url": "https://github.com/opcruz/springboot-sqlite",
-      "github": "https://github.com/opcruz/springboot-sqlite"
-    },
-    {
-      "name": "CDITools",
-      "isActive": true,
-      "description": "CDITools is a tool that allows to go through the main stages of complex network processing: analysis, detection, visualization and evaluation of communities, regardless of the topology.",
-      "highlights": ["Complex networks", "Community Detection", "R"],
-      "url": "https://github.com/opcruz/CDITools",
-      "github": "https://github.com/opcruz/CDITools"
     }
   ]
 }
