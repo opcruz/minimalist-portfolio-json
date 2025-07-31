@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: *.opcruz.dev/
+
+Sitemap: https://opcruz.dev/sitemap.xml
