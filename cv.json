@@ -73,24 +73,14 @@
       "name": "CocitodoFX",
       "isActive": true,
       "description": "CocitodoFx is a complete, custom-built ERP application developed for the company Cocitodo. It is designed to streamline business operations such as inventory management, sales tracking, customer management, and reporting.",
-      "highlights": [
-        "Java",
-        "JavaFX",
-        "MySQL",
-        "ERP system"
-      ],
+      "highlights": ["Java", "JavaFX", "MySQL", "ERP system"],
       "url": "https://www.cocitodo.com.mx/"
     },
     {
       "name": "gaiaDR3ML",
       "isActive": false,
       "description": "Applied machine learning models to classify low-resolution spectra from the Gaia DR3 catalog, enabling more accurate and automated identification of astronomical objects.",
-      "highlights": [
-        "Python",
-        "Astronomy",
-        "Machine Learning",
-        "Gaia DR3"
-      ],
+      "highlights": ["Python", "Astronomy", "Machine Learning", "Gaia DR3"],
       "url": "https://github.com/opcruz/gaiaDR3ML",
       "github": "https://github.com/opcruz/gaiaDR3ML"
     },
@@ -118,14 +108,39 @@
   ],
   "skills": [
     {
-      "name": "Spring",
+      "name": "Java",
       "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "MySQL",
+      "name": "Scala",
       "level": "Advanced",
-      "keywords": ["Database", "SQL", "Data Storage", "Backend"]
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "AWS",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Cloudflare",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Spring",
+      "level": "Advanced",
+      "keywords": []
     },
     {
       "name": "Git",
@@ -138,32 +153,22 @@
       "keywords": []
     },
     {
-      "name": "Cloudflare",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
       "name": "Kafka",
       "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "Docker",
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": ["Database", "SQL", "Data Storage", "Backend"]
+    },
+    {
+      "name": "PostgreSQL",
       "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "Java",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Scala",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Python",
+      "name": "MongoDB",
       "level": "Advanced",
       "keywords": []
     }
