@@ -1,6 +1,8 @@
 {
   "basics": {
     "name": "Orestes Pérez Cruz",
+    "title": "Portfolio of Orestes Pérez Cruz | Backend Developer",
+    "keywords": "backend developer, microservices, scalable APIs, database management, message brokers, software developer portfolio",
     "label": "Backend developer with over 5 years of experience",
     "image": "/me.webp",
     "email": "orestesperez1995@gmail.com",
@@ -25,6 +27,13 @@
         "url": "https://github.com/opcruz"
       }
     ]
+  },
+  "seo": {
+    "name": "Orestes Pérez Cruz",
+    "title": "Portfolio of Orestes Pérez Cruz | Backend Developer",
+    "image": "https://opcruz.dev/me.webp",
+    "description": "Backend developer con 5+ años de experiencia en microservicios, APIs escalables, bases de datos y mensajería. Enfocado en soluciones eficientes y de alta calidad.",
+    "url": "https://opcruz.dev"
   },
   "work": [
     {

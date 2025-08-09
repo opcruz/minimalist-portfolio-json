@@ -1,13 +1,54 @@
 ---
-import { basics } from "@cv"
+import { basics, seo } from "@cv";
 
 interface Props {
-  title: string
+  title: string;
 }
 
-const { title } = Astro.props
+const { title } = Astro.props;
 
-const { image, summary, url } = basics
+const { image, url, keywords } = basics;
+const { name, title: seoTitle, description, image: seoImage } = seo;
+
+// const structuredData = {
+//   "@context": "https://schema.org",
+//   "@type": "Event",
+//   name: "Surferss Wave - Experiencia exclusiva de Surf",
+//   description:
+//     "Un viaje exclusivo con Sofía y sus amigos que combina surf, diversión, playa, fiestas, DJs, y muchas actividades más.",
+//   image: "/sofia-surferrs-hero.png",
+//   startDate: "2025-06-01",
+//   endDate: "2025-06-08",
+//   location: {
+//     "@type": "Place",
+//     name: "Latas Surf House",
+//     address: {
+//       "@type": "PostalAddress",
+//       addressLocality: "Somo",
+//       addressRegion: "Cantabria",
+//       addressCountry: "ES",
+//     },
+//   },
+//   performer: {
+//     "@type": "Person",
+//     name: "Sofía Surferss",
+//   },
+//   offers: {
+//     "@type": "Offer",
+//     availability: "https://schema.org/LimitedAvailability",
+//     price: "0",
+//     priceCurrency: "EUR",
+//     validFrom: "2025-06-01",
+//     url: "https://surferswave.com/#inscripcion",
+//   },
+//   organizer: {
+//     "@type": "Organization",
+//     name: "Surferss Wave",
+//     url: "https://surferswave.com",
+//   },
+//   eventStatus: "https://schema.org/EventScheduled",
+//   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+// };
 ---
 
 <!doctype html>
@@ -15,32 +56,56 @@ const { image, summary, url } = basics
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-    <meta name="description" content={summary} />
+    <meta name="description" content={seo.description} />
+    <meta name="keywords" content={keywords} />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={url} />
     <meta name="theme-color" content="#424242" />
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    
+
     <!-- Preload resources -->
     <link rel="preload" as="image" href={image} />
 
     <!-- Open Graph -->
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={summary} />
-    <meta property="og:image" content={image} />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={seoImage} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ''} />
+    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
     <meta property="twitter:url" content={url} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:title" content={seoTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={seoImage} />
 
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Orestes Pérez Cruz",
+        "url": "https://opcruz.dev",
+        "image": "https://opcruz.dev/me.webp",
+        "jobTitle": "Backend Developer",
+        "description": "Backend developer con más de 5 años de experiencia en microservicios, APIs escalables y bases de datos.",
+        "sameAs": [
+          "https://www.linkedin.com/in/opcruz",
+          "https://github.com/opcruz"
+        ]
+      }
+    </script>
+    <!-- Agregar metadatos estructurados para SEO -->
+    <!-- <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    /> -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <slot />
