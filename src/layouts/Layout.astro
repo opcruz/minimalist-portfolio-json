@@ -7,48 +7,8 @@ interface Props {
 
 const { title } = Astro.props;
 
-const { image, url, keywords } = basics;
-const { name, title: seoTitle, description, image: seoImage } = seo;
-
-// const structuredData = {
-//   "@context": "https://schema.org",
-//   "@type": "Event",
-//   name: "Surferss Wave - Experiencia exclusiva de Surf",
-//   description:
-//     "Un viaje exclusivo con Sofía y sus amigos que combina surf, diversión, playa, fiestas, DJs, y muchas actividades más.",
-//   image: "/sofia-surferrs-hero.png",
-//   startDate: "2025-06-01",
-//   endDate: "2025-06-08",
-//   location: {
-//     "@type": "Place",
-//     name: "Latas Surf House",
-//     address: {
-//       "@type": "PostalAddress",
-//       addressLocality: "Somo",
-//       addressRegion: "Cantabria",
-//       addressCountry: "ES",
-//     },
-//   },
-//   performer: {
-//     "@type": "Person",
-//     name: "Sofía Surferss",
-//   },
-//   offers: {
-//     "@type": "Offer",
-//     availability: "https://schema.org/LimitedAvailability",
-//     price: "0",
-//     priceCurrency: "EUR",
-//     validFrom: "2025-06-01",
-//     url: "https://surferswave.com/#inscripcion",
-//   },
-//   organizer: {
-//     "@type": "Organization",
-//     name: "Surferss Wave",
-//     url: "https://surferswave.com",
-//   },
-//   eventStatus: "https://schema.org/EventScheduled",
-//   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-// };
+const { image, url, keywords, profiles } = basics;
+const { name, jobTitle, title: seoTitle, description, image: seoImage } = seo;
 ---
 
 <!doctype html>
@@ -56,7 +16,7 @@ const { name, title: seoTitle, description, image: seoImage } = seo;
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-    <meta name="description" content={seo.description} />
+    <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -71,6 +31,7 @@ const { name, title: seoTitle, description, image: seoImage } = seo;
     <link rel="preload" as="image" href={image} />
 
     <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={seoTitle} />
@@ -85,26 +46,19 @@ const { name, title: seoTitle, description, image: seoImage } = seo;
     <meta name="twitter:image" content={seoImage} />
 
     <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json" is:inline>
-      {
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Orestes Pérez Cruz",
-        "url": "https://opcruz.dev",
-        "image": "https://opcruz.dev/me.webp",
-        "jobTitle": "Backend Developer",
-        "description": "Backend developer con más de 5 años de experiencia en microservicios, APIs escalables y bases de datos.",
-        "sameAs": [
-          "https://www.linkedin.com/in/opcruz",
-          "https://github.com/opcruz"
-        ]
-      }
-    </script>
-    <!-- Agregar metadatos estructurados para SEO -->
-    <!-- <script
-      type="application/ld+json"
-      set:html={JSON.stringify(structuredData)}
-    /> -->
+        name: name,
+        url: url,
+        image: seoImage,
+        jobTitle: jobTitle,
+        description: description,
+        sameAs: profiles.map((profile) => profile.url),
+      })}
+    />
     <link rel="sitemap" href="/sitemap.xml" />
   </head>
   <body>
